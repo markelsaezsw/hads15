@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="TareasProfesor.aspx.vb" Inherits="WebApplication2.ExportarTareasXML" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="ExportarTareasXML.aspx.vb" Inherits="WebApplication2.ExportarTareasXML" %>
 
 <!DOCTYPE html>
 

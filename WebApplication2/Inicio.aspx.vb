@@ -9,7 +9,10 @@ Public Class WebForm2
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim result As String
-        result = contar(correo.Text, pass.Text)
+        Dim wrapper As New encriptar("contrasenamuycomplicada")
+        Dim cipherText As String = wrapper.EncryptData(pass.Text)
+
+        result = contar(correo.Text, cipherText)
 
         If result = "null" Then
             Label1.Text = result
@@ -18,9 +21,14 @@ Public Class WebForm2
             Session("email") = correo.Text
 
             If result = "P" Then
-                Response.Redirect("http://localhost:50943/Profesor.aspx")
+                System.Web.Security.FormsAuthentication.SetAuthCookie("Profesor", False)
+                Response.Redirect("http://localhost:50943/Profesor/Profesor.aspx")
             ElseIf result = "A" Then
-                Response.Redirect("http://localhost:50943/Alumno.aspx")
+                System.Web.Security.FormsAuthentication.SetAuthCookie("Alumno", False)
+                Response.Redirect("http://localhost:50943/Alumno/Alumno.aspx")
+            ElseIf result = "V" Then
+                System.Web.Security.FormsAuthentication.SetAuthCookie("Vadillo", False)
+                Response.Redirect("http://localhost:50943/Profesor/Profesor.aspx")
             End If
 
         End If

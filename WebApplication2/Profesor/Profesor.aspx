@@ -22,7 +22,7 @@
         <br />
         <a href="ImportarTareasXMLDocument.aspx">Importar y XMLDocument</a><br />
         <br />
-        <a href="ExportarTareasXML.aspx">Exportar</a></div>
+        <a href="../Vadillo/ExportarTareasXML.aspx">Exportar</a></div>
     </form>
 </body>
 </html>

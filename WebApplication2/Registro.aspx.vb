@@ -1,5 +1,8 @@
 ﻿Imports WebApplication2.accesoDatosSQL
 
+
+
+
 Public Class WebForm1
     Inherits System.Web.UI.Page
 
@@ -13,7 +16,18 @@ Public Class WebForm1
         Dim NumConf As Integer
         Randomize()
         NumConf = CLng(Rnd() * 9000000) + 1000000
-        Label1.Text = insertar(email.Text, nombre.Text, dni.Text, pass.Text, pregunta.Text, respuesta.Text, NumConf)
+
+        Dim wrapper As New encriptar("contrasenamuycomplicada")
+        Dim cipherText As String = wrapper.EncryptData(pass.Text)
+        Dim tip As String
+
+        If Tipo.SelectedIndex = 0 Then
+            tip = "A"
+        Else
+            tip = "P"
+
+        End If
+        Label1.Text = insertar(email.Text, nombre.Text, pregunta.Text, respuesta.Text, dni.Text, 1, tip, Tipo.Text, cipherText)
         Dim enlace As String
         enlace = "http://localhost:50943/Confirmar.aspx?mbr=" & email.Text & "&numconf=" & NumConf
 
@@ -27,6 +41,10 @@ Public Class WebForm1
 
   
     Protected Sub Tipo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Tipo.SelectedIndexChanged
+
+    End Sub
+
+    Protected Sub dni_TextChanged(sender As Object, e As EventArgs) Handles dni.TextChanged
 
     End Sub
 End Class

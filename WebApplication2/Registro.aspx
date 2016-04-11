@@ -21,7 +21,7 @@
         <br />
         DNI:<br />
         <asp:TextBox ID="dni" runat="server"></asp:TextBox>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="dni" ErrorMessage="¡Escribe un DNI correcto! (La letra debe estar en mayúscula)" ValidationExpression="(\d{8})([-]?)([A-Z]{1})"></asp:RegularExpressionValidator>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="dni" ErrorMessage="¡Escribe un DNI correcto! " ValidationExpression="(\d{8})"></asp:RegularExpressionValidator>
         <br />
         <br />
         Contraseña:<br />

@@ -6,10 +6,9 @@ Public Class WebForm3
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         conectar()
         Dim correo As String
-        Dim num As Integer
-        correo = Request.QueryString("mbr")
-        num = Request.QueryString("NumConf")
-        Label1.Text = verificar(correo, num)
+
+        correo = Request.QueryString("email")
+        Label1.Text = verificar(correo)
     End Sub
 
     Protected Sub Page_Unload(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Unload

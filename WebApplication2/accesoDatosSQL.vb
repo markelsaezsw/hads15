@@ -26,9 +26,9 @@ Public Class accesoDatosSQL
         conexion.Close()
     End Sub
 
-    Public Shared Function insertar(ByVal email As String, nombre As String, dni As String, contra As String, pregunta As String, respuesta As String, codigo As Integer) As String
+    Public Shared Function insertar(ByVal email As String, nombre As String, pregunta As String, respuesta As String, dni As Integer, confirmado As Integer, grupo As String, tipo As String, pass As String) As String
 
-        Dim st = "insert into Users (Correo,nombreyapellidos,DNI,Password,Pregunta,Respuesta,Confirmado,Codigo) values ('" & email & "', '" & nombre & "', '" & dni & "', '" & contra & "', '" & pregunta & "', '" & respuesta & "', '" & 0 & "', '" & codigo & "')"
+        Dim st = "insert into Usuarios (email,nombre,pregunta,respuesta,dni,confirmado,grupo,tipo,pass) values ('" & email & "', '" & nombre & "', '" & pregunta & "', '" & respuesta & "', '" & dni & "', '" & confirmado & "', '" & grupo & "', '" & tipo & "', '" & pass & "')"
 
         Dim numregs As Integer
         comando = New SqlCommand(st, conexion)
@@ -49,7 +49,9 @@ Public Class accesoDatosSQL
 
         Dim cant As Integer = Convert.ToInt32(comando.ExecuteScalar())
         If cant = 1 Then
-            If correo.Contains("ikasle") Then
+            If correo.Contains("vadillo@ehu.es") Then
+                Return "V"
+            ElseIf correo.Contains("@ikasle.ehu") Then
                 Return "A"
             Else
                 Return "P"
@@ -60,12 +62,12 @@ Public Class accesoDatosSQL
 
     End Function
 
-    Public Shared Function verificar(ByVal correo As String, ByVal num As Integer) As String
-        Dim st = "select count(*) from Users Where Correo = '" & correo & "' AND Codigo = '" & num & "' "
+    Public Shared Function verificar(ByVal correo As String) As String
+        Dim st = "select count(*) from Usuarios Where email = '" & correo & "' "
         comando = New SqlCommand(st, conexion)
         Dim cant As Integer = Convert.ToInt32(comando.ExecuteScalar())
         If cant = 1 Then
-            Dim verf = "UPDATE Users SET Confirmado = '" & True & "' Where Correo = '" & correo & "' "
+            Dim verf = "UPDATE Usuarios SET Confirmado = '" & True & "' Where Correo = '" & correo & "' "
             comando = New SqlCommand(verf, conexion)
             comando.ExecuteNonQuery()
             Return "Correo Verificado"
