@@ -22,7 +22,11 @@
         <br />
         <a href="ImportarTareasXMLDocument.aspx">Importar y XMLDocument</a><br />
         <br />
-        <a href="../Vadillo/ExportarTareasXML.aspx">Exportar</a></div>
+        <a href="../Vadillo/ExportarTareasXML.aspx">Exportar</a><br />
+        <br />
+        <br />
+        <asp:Button ID="Button1" runat="server" Text="Logout" />
+        </div>
     </form>
 </body>
 </html>

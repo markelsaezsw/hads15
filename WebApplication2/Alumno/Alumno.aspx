@@ -19,6 +19,9 @@
         Tareas Propias<br />
         <br />
         Grupos</div>
+        <p>
+            <asp:Button ID="Button1" runat="server" Text="Logout" />
+        </p>
     </form>
 </body>
 </html>

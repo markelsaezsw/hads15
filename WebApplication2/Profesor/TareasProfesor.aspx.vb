@@ -22,15 +22,27 @@ Public Class TareasProfesor
 
 
     
-    Protected Sub SqlDataSource2_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs) Handles SqlDataSource2.Selecting
-        Dim email As String = Session("email")
-        SqlDataSource2.SelectCommand = "SELECT codigoasig FROM GruposClase INNER JOIN ProfesoresGrupo ON GruposClase.codigo = ProfesoresGrupo.codigogrupo WHERE (email = ' " & email & " ')"
+   
 
-    End Sub
+
 
     Protected Sub Page_Unload(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Unload
         cerrarconexion()
     End Sub
 
 
+    Protected Sub DropDownList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList1.SelectedIndexChanged
+
+        Dim email As String = Session("email")
+        Dim codd As String = DropDownList1.Text
+        SqlDataSource1.SelectCommand = "SELECT TareasGenericas.Descripcion, TareasGenericas.Codigo, TareasGenericas.HEstimadas, TareasGenericas.Explotacion FROM GruposClase INNER JOIN ProfesoresGrupo ON GruposClase.codigo = ProfesoresGrupo.codigogrupo INNER JOIN TareasGenericas ON GruposClase.codigoasig = TareasGenericas.CodAsig WHERE (ProfesoresGrupo.email ='" & email & "') AND (TareasGenericas.CodAsig ='" & codd & "')"
+
+        Tabla.DataBind()
+
+    End Sub
+
+
+    Protected Sub SqlDataSource1_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs) Handles SqlDataSource1.Selecting
+
+    End Sub
 End Class

@@ -100,6 +100,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App_Data\ISO.xml" />
+    <Content Include="Global.asax" />
     <Content Include="login.aspx" />
     <Content Include="Vadillo\ExportarTareasXML.aspx" />
     <Content Include="Profesor\ImportarTareasXMLDocument.aspx" />
@@ -126,6 +127,9 @@
     </Compile>
     <Compile Include="encriptar.vb">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>
