@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<tareas>
+  <tarea>
+    <Codigo>ISO-124432</Codigo>
+    <Descripcion>tercera</Descripcion>
+    <HEstimadas>7</HEstimadas>
+    <Explotacion>false</Explotacion>
+    <TipoTarea>Laboratorio</TipoTarea>
+  </tarea>
+  <tarea>
+    <Codigo>ISO-1245</Codigo>
+    <Descripcion>primero</Descripcion>
+    <HEstimadas>2</HEstimadas>
+    <Explotacion>false</Explotacion>
+    <TipoTarea>Ejercicio</TipoTarea>
+  </tarea>
+  <tarea>
+    <Codigo>ISO-Lab1</Codigo>
+    <Descripcion>prueba</Descripcion>
+    <HEstimadas>12</HEstimadas>
+    <Explotacion>true</Explotacion>
+    <TipoTarea>Ejercicio</TipoTarea>
+  </tarea>
+</tareas>

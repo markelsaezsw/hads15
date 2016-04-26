@@ -35,7 +35,7 @@ Public Class WebForm2
                 Application("lprofesores") = Application("lprofesores") & mmail & " "
                 Application.UnLock()
 
-                Response.Redirect("http://localhost:50943/Profesor/Profesor.aspx")
+                Response.Redirect("~/Profesor/Profesor.aspx")
             ElseIf result = "A" Then
                 System.Web.Security.FormsAuthentication.SetAuthCookie("Alumno", False)
 
@@ -45,7 +45,7 @@ Public Class WebForm2
                 Application("lalumnos") = Application("lalumnos") & mmail & " "
                 Application.UnLock()
 
-                Response.Redirect("http://localhost:50943/Alumno/Alumno.aspx")
+                Response.Redirect("~/Alumno/Alumno.aspx")
             ElseIf result = "V" Then
                 System.Web.Security.FormsAuthentication.SetAuthCookie("Vadillo", False)
                 Application.Lock()
@@ -53,7 +53,7 @@ Public Class WebForm2
                 Application("profesores") = Application("profesores") + 1
                 Application("lprofesores") = Application("lprofesores") & mmail & " "
                 Application.UnLock()
-                Response.Redirect("http://localhost:50943/Profesor/Profesor.aspx")
+                Response.Redirect("~/Profesor/Profesor.aspx")
             End If
 
         End If

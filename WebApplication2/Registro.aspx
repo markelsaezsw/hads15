@@ -29,6 +29,13 @@
         <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="pass" ErrorMessage="¡Introduce una contraseña correcta! (Al menos 6 caracteres y al menos 1 número)" ValidationExpression="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"></asp:RegularExpressionValidator>
         <br />
         <br />
+        ¿No se te ocurre una buena contraseña? ¡Genera una!<br />
+        <asp:Button ID="Button2" runat="server" CausesValidation="False" Text="Generar" />
+        <br />
+        <br />
+        <asp:Label ID="Label3" runat="server">l</asp:Label>
+        <br />
+        <br />
         Repetir contraseña:<br />
         <asp:TextBox ID="pass2" runat="server" TextMode="Password"></asp:TextBox>
         <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="pass" ControlToValidate="pass2" ErrorMessage="¡Vuelve a introducir la contraseña!"></asp:CompareValidator>
@@ -55,6 +62,7 @@
         <br />
         <asp:Label ID="Label1" runat="server"></asp:Label>
         <br />
+        <asp:Label ID="Label2" runat="server"></asp:Label>
         <br />
         <a href="Inicio.aspx">Inicio</a></form>
 </body>

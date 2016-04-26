@@ -1,5 +1,5 @@
 ﻿Imports WebApplication2.accesoDatosSQL
-Imports System.Data.OleDb
+
 Imports System.Xml
 Imports System.Data.SqlClient
 
@@ -7,7 +7,7 @@ Public Class ImportarTareasXMLDocument
     Inherits System.Web.UI.Page
     'Dim conClsf As OleDbConnection = New OleDbConnection("Provider=SQLNCLI11;Password=MJimenez035;User ID=hads15@hads15;Initial Catalog=Hads15;Data Source=tcp:hads15.database.windows.net;")
 
-    Dim dapMbrs As New OleDbDataAdapter
+
     Dim dstMbrs As New DataSet
     Dim tblMbrs As New DataTable
     Dim rowMbrs As DataRow

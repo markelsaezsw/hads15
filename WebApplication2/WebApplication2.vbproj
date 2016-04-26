@@ -53,6 +53,8 @@
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
@@ -100,8 +102,17 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App_Data\ISO.xml" />
+    <Content Include="generarpass.asmx" />
     <Content Include="Global.asax" />
     <Content Include="login.aspx" />
+    <Content Include="mediadedicacion.asmx" />
+    <Content Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <Content Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <Content Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <Content Include="Vadillo\coordinador.aspx" />
     <Content Include="Vadillo\ExportarTareasXML.aspx" />
     <Content Include="Profesor\ImportarTareasXMLDocument.aspx" />
     <Content Include="Profesor\InsertarTarea.aspx" />
@@ -128,6 +139,10 @@
     <Compile Include="encriptar.vb">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="generarpass.asmx.vb">
+      <DependentUpon>generarpass.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -136,6 +151,22 @@
     </Compile>
     <Compile Include="login.aspx.vb">
       <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mediadedicacion.asmx.vb">
+      <DependentUpon>mediadedicacion.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Vadillo\coordinador.aspx.designer.vb">
+      <DependentUpon>coordinador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vadillo\coordinador.aspx.vb">
+      <DependentUpon>coordinador.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Vadillo\ExportarTareasXML.aspx.designer.vb">
@@ -227,6 +258,11 @@
       <DependentUpon>TareasProfesor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Web References\matriculas\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -238,6 +274,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <None Include="My Project\PublishProfiles\Hads15 - FTP %282%29.pubxml" />
+    <None Include="My Project\PublishProfiles\Hads15 - FTP %283%29.pubxml" />
+    <None Include="My Project\PublishProfiles\Hads15 - FTP %284%29.pubxml" />
+    <None Include="My Project\PublishProfiles\Hads15 - FTP %285%29.pubxml" />
+    <None Include="My Project\PublishProfiles\Hads15 - FTP %286%29.pubxml" />
+    <None Include="My Project\PublishProfiles\Hads15 - FTP %287%29.pubxml" />
+    <None Include="My Project\PublishProfiles\Hads15 - FTP %288%29.pubxml" />
+    <None Include="My Project\PublishProfiles\Hads15 - Web Deploy %282%29.pubxml" />
+    <None Include="My Project\PublishProfiles\Hads15 - Web Deploy %283%29.pubxml" />
+    <None Include="My Project\PublishProfiles\Hads15 - Web Deploy %284%29.pubxml" />
+    <None Include="My Project\PublishProfiles\Hads15 - Web Deploy %285%29.pubxml" />
+    <None Include="My Project\PublishProfiles\Hads15 - Web Deploy %286%29.pubxml" />
+    <None Include="My Project\PublishProfiles\Hads15 - Web Deploy %287%29.pubxml" />
+    <None Include="My Project\PublishProfiles\Hads15 - Web Deploy %288%29.pubxml" />
+    <None Include="My Project\PublishProfiles\hads15prueba - FTP.pubxml" />
+    <None Include="My Project\PublishProfiles\hads15prueba - Web Deploy.pubxml" />
+    <Content Include="Service References\ServiceReference1\comprobarmatricula.wsdl" />
     <None Include="tareas.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -253,6 +306,11 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <Content Include="tareas.dtd" />
+    <Content Include="Web References\matriculas\comprobarmatricula.wsdl" />
+    <Content Include="Web References\matriculas\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -263,7 +321,25 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://sw14.hol.es/ServiciosWeb/comprobarmatricula.php%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\matriculas\</RelPath>
+      <UpdateFromURL>http://sw14.hol.es/ServiciosWeb/comprobarmatricula.php%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WebApplication2_matriculas_Matriculas</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

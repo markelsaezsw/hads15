@@ -6,3 +6,22 @@
 \\vmware-host\Shared Folders\Documentos\Visual Studio 2012\Projects\WebApplication2\WebApplication2\obj\Release\WebApplication2.dll
 \\vmware-host\Shared Folders\Documentos\Visual Studio 2012\Projects\WebApplication2\WebApplication2\obj\Release\WebApplication2.xml
 \\vmware-host\Shared Folders\Documentos\Visual Studio 2012\Projects\WebApplication2\WebApplication2\obj\Release\WebApplication2.pdb
+C:\xampp\htdocs\WebApplication2\WebApplication2\bin\WebApplication2.dll
+C:\xampp\htdocs\WebApplication2\WebApplication2\bin\WebApplication2.pdb
+C:\xampp\htdocs\WebApplication2\WebApplication2\bin\WebApplication2.xml
+C:\xampp\htdocs\WebApplication2\WebApplication2\bin\Newtonsoft.Json.dll
+C:\xampp\htdocs\WebApplication2\WebApplication2\bin\System.Net.Http.Formatting.dll
+C:\xampp\htdocs\WebApplication2\WebApplication2\bin\System.Web.Http.dll
+C:\xampp\htdocs\WebApplication2\WebApplication2\bin\System.Web.Http.WebHost.dll
+C:\xampp\htdocs\WebApplication2\WebApplication2\bin\Newtonsoft.Json.xml
+C:\xampp\htdocs\WebApplication2\WebApplication2\bin\System.Net.Http.Formatting.xml
+C:\xampp\htdocs\WebApplication2\WebApplication2\bin\System.Web.Http.xml
+C:\xampp\htdocs\WebApplication2\WebApplication2\bin\System.Web.Http.WebHost.xml
+C:\xampp\htdocs\WebApplication2\WebApplication2\obj\Release\WebApplication2.vbprojResolveAssemblyReference.cache
+C:\xampp\htdocs\WebApplication2\WebApplication2\obj\Release\WebApplication2.Resources.resources
+C:\xampp\htdocs\WebApplication2\WebApplication2\obj\Release\WebApplication2.vbproj.GenerateResource.Cache
+C:\xampp\htdocs\WebApplication2\WebApplication2\obj\Release\WebApplication2.dll
+C:\xampp\htdocs\WebApplication2\WebApplication2\obj\Release\WebApplication2.xml
+C:\xampp\htdocs\WebApplication2\WebApplication2\obj\Release\WebApplication2.pdb
+C:\xampp\htdocs\WebApplication2\WebApplication2\bin\WebApplication2.XmlSerializers.dll
+C:\xampp\htdocs\WebApplication2\WebApplication2\obj\Release\WebApplication2.XmlSerializers.dll

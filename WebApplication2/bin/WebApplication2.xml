@@ -166,6 +166,38 @@ Control Label7.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member><member name="F:WebApplication2.coordinador.form1">
+	<summary>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication2.coordinador.SqlDataSource1">
+	<summary>
+Control SqlDataSource1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication2.coordinador.DropDownList1">
+	<summary>
+Control DropDownList1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication2.coordinador.Label1">
+	<summary>
+Control Label1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
 </member><member name="F:WebApplication2.WebForm1.form1">
 	<summary>
 Control form1.
@@ -233,6 +265,22 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:WebApplication2.WebForm1.RegularExpressionValidator3">
 	<summary>
 Control RegularExpressionValidator3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication2.WebForm1.Button2">
+	<summary>
+Control Button2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication2.WebForm1.Label3">
+	<summary>
+Control Label3.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -313,6 +361,14 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:WebApplication2.WebForm1.Label1">
 	<summary>
 Control Label1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApplication2.WebForm1.Label2">
+	<summary>
+Control Label2.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -678,6 +734,26 @@ Control Tabla.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member><member name="M:WebApplication2.matriculas.Matriculas.#ctor">
+	<remarks/>
+</member><member name="E:WebApplication2.matriculas.Matriculas.comprobarCompleted">
+	<remarks/>
+</member><member name="M:WebApplication2.matriculas.Matriculas.comprobar(System.String)">
+	<remarks/>
+</member><member name="M:WebApplication2.matriculas.Matriculas.comprobarAsync(System.String)">
+	<remarks/>
+</member><member name="M:WebApplication2.matriculas.Matriculas.comprobarAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebApplication2.matriculas.Matriculas.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:WebApplication2.matriculas.Matriculas">
+	<remarks/>
+</member><member name="T:WebApplication2.matriculas.comprobarCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebApplication2.matriculas.comprobarCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebApplication2.matriculas.comprobarCompletedEventArgs">
+	<remarks/>
 </member><member name="F:WebApplication2.login.form1">
 	<summary>
 Control form1.

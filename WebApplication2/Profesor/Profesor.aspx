@@ -24,6 +24,7 @@
         <br />
         <a href="../Vadillo/ExportarTareasXML.aspx">Exportar</a><br />
         <br />
+        <a href="../Vadillo/coordinador.aspx">Coordinar</a><br />
         <br />
         <asp:Button ID="Button1" runat="server" Text="Logout" />
         </div>

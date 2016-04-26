@@ -1,2 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters />
+<parameters>
+  <parameter name="Hads15ConnectionString-Web.config Connection String" description="Hads15ConnectionString Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=tcp:hads15.database.windows.net,1433;Initial Catalog=Hads15;Persist Security Info=True;User ID=hads15@hads15;Password=MJimenez035" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\xampp\\htdocs\\WebApplication2\\WebApplication2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Hads15ConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

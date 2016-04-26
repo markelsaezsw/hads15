@@ -19,7 +19,8 @@
 
 
 
-
+        Response.Redirect("http://hads15.azurewebsites.net/inicio.aspx")
         Session.Clear()
+
     End Sub
 End Class
